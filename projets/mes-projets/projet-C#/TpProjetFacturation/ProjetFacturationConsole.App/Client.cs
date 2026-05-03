@@ -10,7 +10,13 @@ public class Client : Personne
 
     public override void AfficherInfos()
     {
-        base.AfficherInfos();
+        Console.Write($"ID: {id}");
+        Console.Write($" - Nom: {nom}");
+        Console.Write($" - Email: {email}");
+        Console.Write($" - Téléphone: {telephone}");
+        Console.Write($" - Adresse: {adresse}");
+        Console.Write($" - Ville: {ville}");
+        Console.Write($" - Code Postal: {codePostal}");
         Console.WriteLine($" - Date d'inscription: {dateInscription.ToShortDateString()}");
     }
 }

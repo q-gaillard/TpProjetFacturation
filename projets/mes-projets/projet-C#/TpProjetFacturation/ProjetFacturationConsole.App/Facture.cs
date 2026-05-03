@@ -3,6 +3,12 @@ public class Facture : DocumentCommercial
     private DateTime dateEcheance;
     private string statut;
 
+    public Facture(string numero, DateTime dateEmission, Client client, Entreprise entreprise, DateTime dateEcheance, string statut) : base(numero, dateEmission, client, entreprise)
+    {
+        this.dateEcheance = dateEcheance;
+        this.statut = statut;
+    }
+
     public override void AfficherFacture()
     {
         Console.WriteLine("FACTURE\n");

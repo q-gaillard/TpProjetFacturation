@@ -28,14 +28,5 @@ public abstract class Personne
         this.codePostal = codePostal;
     }
 
-    public abstract void AfficherInfos()
-    {
-        Console.Write($"ID: {id}");
-        Console.Write($" - Nom: {nom}");
-        Console.Write($" - Email: {email}");
-        Console.Write($" - Téléphone: {telephone}");
-        Console.Write($" - Adresse: {adresse}");
-        Console.Write($" - Ville: {ville}");
-        Console.Write($" - Code Postal: {codePostal}");
-    }
+    public abstract void AfficherInfos();
 }
